@@ -1,0 +1,248 @@
+.card-section {
+  padding: 5em;
+  
+}
+
+.card-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.3em;
+  color: var(--color-brown);
+  font-weight: 500;
+  text-align: center;
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3em;
+  position: relative;
+}
+
+.search-bar input {
+  padding: 0.6em 1em;
+  border: 2px solid rgba(144, 144, 144, 0.5);
+  border-radius: 5px;
+  min-width: 200px;
+  width: calc(45% - 20px);
+  max-width: 500px;
+  color: var(--color-brown);
+  transition: width 0.3s ease;
+}
+
+
+.item-details {
+    margin-top: 1em;
+    text-align: left;
+    color: var(--color-brown);
+}
+
+.item-name {
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: var(--color-brown);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.item-price {
+    font-size: 1.1rem;
+    color: var(--color-brown);
+    font-weight: 400;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: var(--color-white);
+  padding: 2em;
+  border-radius: 5px;
+  width: 80%;
+  max-width: 600px;
+  position: relative;
+  font-size: 1rem;
+  color: var(--color-brown);
+}
+
+.modal-content p{
+    color: var(--color-text);
+    text-align: left;
+}
+
+.modal-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  margin-bottom: 1em;
+}
+
+.close {
+  position: absolute;
+  top: 0.2em;
+  right: 0.5em;
+  font-size: 2em;
+  cursor: pointer;
+  color: var(--color-gray);
+  transition: color 0.3s;
+}
+
+.close:hover {
+  color: var(--color-brown);
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.8em;
+}
+
+.modal-content p {
+  margin-bottom: 0.5em;
+}
+
+.modal .order-button {
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  background-color: var(--color-gray);
+  box-shadow: 0px 4px 10px 1px var(--color-light-gray);
+  border-radius: 5px;
+  margin-top: 2em;
+  cursor: pointer;
+  width: 100%;
+}
+.modal .order-button:hover {
+  transition: all 0.5s;
+  background-color: var(--color-brown);
+  box-shadow: 0px 4px 10px 1px var(--color-brown);
+}
+
+.no-items-message h3{
+  font-size: 1.5rem;
+  margin-bottom: 1.3em;
+  color: var(--color-brown);
+  font-weight: 400;
+  text-align: center;
+}
+
+.no-items-message{
+text-align: center;
+}
+
+.no-items-image {
+    max-width: 50%;
+    margin-bottom: 1em;
+    border-radius: 15px;
+}
+
+
+
+/*АДАПТАЦИЯ ПОД ПЛАНШЕТ*/
+@media (min-width: 810px) and (max-width: 1024px){
+      .card-section {
+        padding: 3em;
+    }
+
+    .card-section h2 {
+        font-size: 2rem;
+        margin-bottom: 1em;
+    }
+
+  .search-bar {
+    margin: 1.5em 5em;
+  }
+  .search-bar input {
+    width: calc(60% - 20px);
+    min-width: 250px;
+    max-width: 600px;
+  }
+
+    .jewelry-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+      .modal-content {
+    padding: 1.8em;
+    font-size: 0.95rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.4rem;
+  }
+
+    .no-items-message h3 {
+    font-size: 1.4rem;
+  }
+
+  .no-items-image {
+    max-width: 80%;
+  }
+}
+
+/*АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
+@media (min-width: 390px) and (max-width:809px){
+   .card-section {
+        padding: 1.2em;
+    }
+
+    .card-section h2 {
+        font-size: 1.7rem;
+        margin-bottom: 0.8em;
+    }
+
+  .search-bar {
+    margin: 1em 2em;
+  }
+  .search-bar input {
+    width: 100%;
+    min-width: auto;
+    max-width: none;
+  }
+
+
+    .jewelry-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item-name {
+        font-size: 0.9rem;
+    }
+
+    .item-price {
+        font-size: 1rem;
+    }
+
+     .modal-content {
+    padding: 1.5em;
+    font-size: 0.9rem;
+  }
+
+  .modal-content h2 {
+    font-size: 1.3rem;
+  }
+
+  .close {
+    font-size: 1.3em;
+  }
+
+  .no-items-message h3 {
+    font-size: 1.1rem;
+  }
+
+  .no-items-image {
+    max-width: 70%;
+    margin-bottom: 1.5em;
+  }
+}
+
+
+
+

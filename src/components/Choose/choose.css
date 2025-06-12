@@ -1,0 +1,101 @@
+.choose-section {
+  padding: 5em;
+  background-color: var(--color-light-gray);
+  text-align: center;
+}
+
+.choose-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.3em;
+  color: var(--color-white);
+  font-weight: 500;
+}
+
+.options-container {
+  display: flex;
+  justify-content: center;
+  gap: 5em;
+  margin-bottom: 3em;
+}
+
+.option-card {
+  width: 27vw;
+  padding: 2.7em;
+  background-color: var(--color-white);
+  border-radius: 25px;
+  text-align: center;
+}
+
+.option-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+  color: var(--color-brown);
+  font-weight: 500;
+}
+
+.option-card p {
+  font-size: 1.3rem;
+  color: var(--color-text);
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+
+/*АДАПТАЦИЯ ПОД ПЛАНШЕТ*/
+@media (min-width: 810px) and (max-width: 1200px){
+    .choose-section {
+    padding: 3em;
+  }
+
+  .choose-section h2 {
+    font-size: 2.2rem;
+  }
+
+  .options-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .option-card {
+    width: 70vw;
+  }
+
+  .option-card h3 {
+    font-size: 1.3rem;
+  }
+
+  .option-card p {
+    font-size: 1.2rem;
+  }
+}
+
+/*АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
+@media (min-width: 390px) and (max-width:809px){
+    .choose-section {
+    padding: 2em;
+  }
+
+  .choose-section h2 {
+    font-size: 1.8rem;
+  }
+
+    .options-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+  }
+
+  .option-card {
+    width: 85vw;
+    padding: 1em;
+  }
+
+  .option-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .option-card p {
+    font-size: 1.1rem;
+  }
+}

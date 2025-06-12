@@ -1,0 +1,148 @@
+.form-section {
+    padding: 5em 0em;   
+}
+
+.form-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 3em;
+  color: var(--color-brown);
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.form-section form {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgba(144, 144, 144, 0.5);
+    padding: 3em;
+}
+
+.form-row {
+    display: flex;
+    margin-bottom: 3em;
+}
+
+.form-group {
+    width: 17vw;
+    margin-right: 3.2em;
+}
+
+
+.form-section input[type="text"],
+.form-section input[type="email"] {
+    width: 100%;
+    padding: 0.5em 0;
+    border-bottom: 3px solid var(--color-gray);
+    font-size: 1rem;
+    color: var(--color-brown);
+    border-radius: 0px;
+}
+
+.form-section input[type="text"]:focus,
+.form-section input[type="email"]:focus {
+    border-color: var(--color-brown);
+}
+
+.message{
+    width: 57vw;
+    margin-right: 20em;          
+}
+
+.submit-btn {
+  font-size: 1.2rem;
+  padding: 12px 28px;
+  background-color: var(--color-gray);
+  box-shadow: 0px 4px 10px 1px var(--color-light-gray);
+  border-radius: 5px;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  transition: all 0.5s;
+  background-color: var(--color-brown);
+  box-shadow: 0px 4px 10px 1px var(--color-brown);
+}
+
+input::placeholder {
+    color: var(--color-gray);
+}
+
+
+/*АДАПТАЦИЯ ПОД ПЛАНШЕТ*/
+@media (min-width: 810px) and (max-width: 1370px){
+        .form-section {
+        padding: 3em;
+    }
+
+    .form-section h2 {
+        font-size: 1.6rem;
+        margin-bottom: 2em;
+    }
+
+    .form-row {
+        flex-direction: column;
+        margin-bottom: 0em;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    .message {
+        width: 100%;
+    }
+
+    .form-section form {
+      padding: 2em;
+    }
+}
+
+
+/*АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
+@media (min-width: 390px) and (max-width:809px){
+     .form-section {
+        padding: 1em 0em;
+    }
+
+    .form-section h2 {
+        font-size: 0.8rem;
+        margin-bottom: 1.5em;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 1em;
+    }
+
+  .form-section input[type="text"],
+  .form-section input[type="email"] {
+    font-size: 0.75rem;
+  }
+
+    .message {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .submit-btn {
+        font-size: 0.8rem;
+        padding: 10px 15px;
+    }
+
+  .form-section form {
+    padding: 1em;
+  }
+
+      .form-row {
+        flex-direction: column;
+        margin-bottom: 0em;
+    }
+}

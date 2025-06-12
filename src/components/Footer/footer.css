@@ -1,0 +1,92 @@
+.footer {
+  background-color: var(--color-gray);
+  padding: 5em;
+}
+
+
+.footer-content {
+  display: flex;
+}
+
+.footer-column {
+  flex: 1;
+}
+
+.footer-column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1em;
+}
+
+.footer-column li, p {
+  margin-bottom: 0.7em;
+}
+
+
+.link:hover{
+  color: var(--color-brown);
+  transition: all 0.5s;
+}
+
+.logo-footer {
+  font-size: 2.38rem; 
+  font-weight: bold;
+  margin-bottom: 1.2em;
+  font-family: "Merriweather", sans-serif;
+}
+
+.social-icons {
+  display: flex;
+  gap: 0.65em;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.i:hover{
+  fill: var(--color-brown);
+  transition: all 0.5s;
+}
+
+.logo-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+
+/*АДАПТАЦИЯ ПОД ПЛАНШЕТ*/
+@media (min-width: 810px) and (max-width: 1024px){
+     .footer {
+        padding: 3em;
+    }
+      .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        margin-bottom: 1em; 
+    }
+}
+
+/*АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
+@media (min-width: 390px) and (max-width:809px){
+   .footer {
+        padding: 2.2em;
+    }
+
+    .footer-column h3 {
+        font-size: 1.1rem;
+    }
+
+    .social-icons {
+        font-size: 1.7rem;
+        margin-bottom: 1em;
+    }
+
+    .logo-footer {
+        font-size: 2rem;
+    }
+
+          .footer-content {
+        flex-direction: column;
+    }
+}

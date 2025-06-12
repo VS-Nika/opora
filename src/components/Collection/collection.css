@@ -1,0 +1,117 @@
+.collection-section {
+  padding: 5em;
+  text-align: center;
+}
+
+.collection-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5em;
+  color: var(--color-brown);
+  font-weight: 500;
+}
+
+.filter-buttons {
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5em; 
+}
+
+.filter-buttons button {
+  background-color: var(--color-white);
+  border-bottom: 3px solid var(--color-gray);
+  padding: 0.4em 0.6em;
+  cursor: pointer;
+  color: var(--color-gray);
+  font-size: 1.3rem;
+}
+
+.filter-buttons button.active {
+  color: var(--color-brown);
+  border-color: var(--color-brown);
+}
+
+.jewelry-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5em;
+}
+
+.jewelry-item {
+  border-radius: 15px;
+  margin: 0 auto;
+}
+
+.jewelry-item:hover {
+  transform: scale(1.1);
+  transition: all 0.8s;
+}
+
+.jewelry-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    object-position: center center;
+}
+
+
+/*АДАПТАЦИЯ ПОД ПЛАНШЕТ*/
+@media (min-width: 810px) and (max-width: 1024px){
+  .filter-buttons button {
+  margin-bottom: 1em;
+}
+
+.collection-section h2 {
+  font-size: 2rem;
+}
+
+.filter-buttons {
+  margin-bottom: 2em;
+  justify-content: space-around;
+}
+
+.jewelry-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+}
+
+/*АДАПТАЦИЯ ПОД ТЕЛЕФОН*/
+@media (min-width: 390px) and (max-width:809px){
+
+.collection-section {
+  padding: 2em;
+}
+
+.jewelry-item img {
+  width: 100%;
+}
+
+.collection-section h2 {
+  font-size: 1.7rem;
+  margin-bottom: 1em;
+}
+
+.filter-buttons button {
+  padding: 0.2em 0.4em;
+  margin-right: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: 1.1rem;
+}
+
+.filter-buttons {
+    justify-content: center;
+    margin-bottom: 3em;
+}
+
+ .jewelry-grid {
+    grid-template-columns: 1fr; 
+  }
+}
+
+@media (min-width: 1023px) and (max-width: 1650px){
+.jewelry-grid {
+  grid-template-columns: repeat(3, 1fr);     
+}
+}
